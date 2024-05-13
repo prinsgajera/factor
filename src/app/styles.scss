@@ -1,0 +1,15 @@
+.content{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.left-part{
+    background-color: green;
+}
+.left-part > :p{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Marr Sans Cond Web", Arial, Helvetica, sans-serif;
+    letter-spacing: -2px;
+}

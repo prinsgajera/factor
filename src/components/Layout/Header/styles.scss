@@ -1,0 +1,70 @@
+/* components/Header.module.scss */
+// styles.scss
+
+@import '../../../app/variables.module.scss';
+
+header {
+    padding: 3vh 0;
+    border-bottom: 1px solid $secondary-color;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .brand a {
+    color: $dark-text;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  
+  header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  header nav ul li > a {
+    color: $dark-text;
+    text-decoration: none;
+  }
+  
+  header nav ul  li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+  }
+  
+  li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    border-radius: 20px;
+    background: $dark-text;
+  }
+
+/* More button */
+.more-button {
+  display: none;
+  cursor: pointer;
+  padding: 5px;
+  background-color: $secondary-color;
+  border-radius: 10px;
+}
+  /* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .navbar ul{
+    display: none;
+  }
+
+  .navbar .more-button{
+    display: block;
+  }
+}

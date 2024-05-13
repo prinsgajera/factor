@@ -1,0 +1,73 @@
+@import '../../../app/variables.module.scss';
+
+footer{
+  background: rgb(241, 241, 241);
+  margin-top: 100px;
+}
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+section {
+  width: calc(25% - 20px); 
+  margin-bottom: 20px;
+}
+
+section h1{
+    margin: 10px 0px;
+}
+
+.main-footer .part-1 p{
+    line-height: 20px;
+    margin: 10px 0px;
+}
+
+.main-footer .part-2 ul li{
+  list-style: none;
+  color: $secondary-color;
+  margin: 10px 0px;
+}
+.main-footer .part-2 ul li a{
+  text-decoration: none;
+  color: $secondary-color;
+  margin: 0px 5px;
+}
+.main-footer .part-2 ul li:hover{
+    transform: translate(10px,0px);
+    transition: all 0.5s;
+    color:$primary-color;
+}
+.main-footer .part-3 img{
+  margin: 5px;
+}
+
+.main-footer .part-4 {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+footer .footer-end{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 0px;
+  background-color:  calc(#{$primary-color} - 1%);
+}
+footer .footer-end a{
+  text-decoration: none;
+  margin: 0px 5px;
+  color: $dark-text;
+}
+footer .footer-end a:hover{
+  color:red;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  section {
+    width: calc(50% - 20px);
+  }
+}

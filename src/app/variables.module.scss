@@ -1,0 +1,11 @@
+$primary-color: #04d0c3;
+$secondary-color:grey;
+$light-text: #fff;
+$dark-text: #000;
+ 
+:export {
+  primaryColor: $primary-color;
+  lightText: $light-text;
+  darkText: $dark-text;
+  secondaryColor:$secondary-color;
+}

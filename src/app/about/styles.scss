@@ -1,0 +1,55 @@
+@import '../../app/variables.module.scss';
+
+.about-container{
+    text-align: center;
+    width: 100%;
+}
+.about-heading{
+    text-align: center;
+    margin: 10px 0px;
+}
+.about-container section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.part-1{
+    margin: 20px 0px;
+}
+.part-1 .about-main{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.part-1 .about-main img{
+    width: 40%;
+}
+.part-1 .about-content{
+    width: 50%;
+}
+.part-1 .about-content span{
+    font-weight: 900;
+}
+.part-2{
+    margin: 20px 0px;
+}
+.choice-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .choice-container {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .part-2 {
+      padding: 10px;
+    }
+  }

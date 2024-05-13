@@ -1,0 +1,41 @@
+@import '../../app/variables.module.scss';
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 250px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+  }
+  
+  .product-card h3 {
+    margin-top: 10px;
+  }
+  
+  .product-card p {
+    color: #666;
+  }
+  
+  .product-card button {
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .product-card button a{
+    text-decoration: none;
+    color: $light-text;
+  }
+  
+  .product-card button:hover {
+    opacity: 0.9;
+    scale: 1.1;
+    transition: all 0.3s;
+  }

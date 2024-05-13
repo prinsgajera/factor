@@ -1,0 +1,13 @@
+@import '../../app/variables.module.scss';
+
+#heading{
+    margin: 20px 0px;
+}
+#heading::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: $primary-color;
+}
